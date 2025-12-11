@@ -30,7 +30,7 @@ O sucesso do buscador dependia da precisão dos dados. O processo envolveu:
 * Exportação de um CSV otimizado para importação em massa, garantindo integridade dos dados.
 
 ### 2. Implementação Técnica (PHP Snippets)
-O plugin nativo não exibia as categorias/equipamentos da forma desejada. Foi necessário injetar código via `functions.php` (ou Code Snippets) para alterar o template de renderização.
+O plugin nativo não exibia as categorias/equipamentos da forma desejada. Foi necessário injetar código via  Code Snippets para alterar o template de renderização.
 
 **Solução para Exibir Equipamentos:**
 Utilizei o filtro `wpsl_listing_template` para reescrever o HTML do card, capturando os termos da taxonomia `wpsl_store_category` e renderizando-os como etiquetas visuais.
